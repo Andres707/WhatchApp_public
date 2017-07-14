@@ -1,0 +1,50 @@
+
+a:hover,
+a:focus {
+    color: #0E6655;
+}
+
+.circled {
+	background: #0E6655;
+}
+
+.con1 > div, .con2 > div, .con3 > div { 
+	background-color: #0E6655;
+}
+
+.scrollup:hover {
+	background: #0E6655;
+}
+
+
+.btn-skin {
+  background-color: #C70039  ;
+  border-color: #0E6655;
+}
+
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #0E6655;
+}
+.navbar-custom.top-nav-collapse .nav li a:hover,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
+    color: #0E6655;
+}
+
+
+
+.bg-skin {
+	background: #A9DFBF  ;
+}
+
+.highlight-color {
+	background-color: #A9DFBF  ;
+}
+.color {
+	color: #A9DFBF  ;
+}
+
+.form-control:focus {
+  border-color: #A9DFBF  ;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<script src="./js/angular.min.js"></script>
+	<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCINlcCNGmemqZlikPaZyy0OvehJ2C3wLY">
+	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WatchApp</title>
+	
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+	<!-- template skin -->
+	<link id="t-colors" href="color/default.css" rel="stylesheet">
+	<style> body {background-color: #D0D3D4} </style>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" >
+
+<div id="wrapper">
+	
+    <nav class="navbar navbar-custom" role="navigation">
+        <div class="container navigation">
+		
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="" width="50" height="50" />
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+			  <ul class="nav navbar-nav">
+				<li><div id="cart"></div></li>
+				<li class="active"><a href="#intro">Inicio</a></li>
+				<li><a href="#Carac">Caracteristicas</a> </li>
+				<li><a href="#Mapa">Mapa y Estadisticas</a> </li>
+				<li><a href=".about">Acerca de</a> </li>
+
+			  </ul>
+            </div>
+
+        </div>
+    </nav>
+	
+    <section id="intro" class="intro">
+		<div class="intro-content">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+						<center> <img src="./img/iphone.png" alt="" width="305" height="500"/> </center>
+
+					</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 slogan">
+						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+						<h2><b>Bienvenido a WatchApp.</b></h2>
+						<p>
+						Es un servicio que envia alertas al usario reportar los hechos que pueden afectar a otras personas,para que sean advertidos y puedan tomar las precauciones necesarias para evitar involucrarse en ello.
+						
+						</p>
+						<p>
+						
+						</p>
+						</div>
+						<div class="buttons">
+						<a href="#" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-android fa-2x"></i> Download<br /> <small>Android version 4.1</small></a>
+						</div>
+						
+					</div>					
+				</div>		
+			</div>
+		</div>		
+    </section>
+	
+	
+	
+    <section id="Carac" class="home-section">
+		<center><hr></center>
+	
+		<div class="container">
+			<div class="row text-center heading">
+				<h3><b>Características.</b></h3>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="wow fadeInLeft " data-wow-delay="0.2s">
+						<img src="./img/img-1.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="wow fadeInRight" data-wow-delay="0.3s">
+						<div class="features">							
+							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
+							<h5><b>Manejo fácil.</b></h5>
+							<p>
+							Tiene un entorno amigable.
+							</p>
+						</div>
+						<div class="features">							
+							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
+							<h5><b>Tiempo real.</b></h5>
+							<p>
+							Las notificaciones son en tiempo real y los reportes hechos usuarios.
+							</p>
+						</div>
+						<div class="features">							
+							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
+							<h5><b>Actualización de Estadísticas.</b></h5>
+							<p>
+							La aplicación creará estadísticas y tendrá una clasificación de acuerdo a la estadística y la zona. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	
+    <section id="Mapa" class="home-section">
+		<center><hr></center>	
+	
+		<div class="container">
+			<div class="row text-center heading">
+				<h3><b>Mapa y Estadísticas.</b></h3>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-3">
+					<div class="wow fadeInLeft" data-wow-delay="0.2s">
+						<p>
+						
+						</p>
+						<!--<div class="divider-short marginbot-30 margintop-30"></div>-->
+	
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="wow fadeInRight" data-wow-delay="0.3s">
+						<div id="map" style="height: 500px;"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	
+	<!--
+    <section id="works" class="home-section text-center">
+		<center><hr></center>
+		<div class="container">
+			<div class="row text-center heading">
+				<h3><b>Screenshots</b></h3>
+			</div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+
+                    <div class="row gallery-item">
+                        <div class="col-md-3">
+							<a href="./img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="./img/works/1@2x.jpg">
+								<img src="./img/works/1.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="./img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="./img/works/1@2x.jpg">
+								<img src="./img/works/2.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="./img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="./img/works/1@2x.jpg">
+								<img src="./img/works/3.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="./img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="./img/works/1@2x.jpg">
+								<img src="./img/works/4.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+					</div>
+	
+                </div>
+            </div>	
+		</div>
+	</section>
+	-->
+
+
+	<section id="callaction" class="home-section paddingtop-40 about">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="callaction">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="wow fadeInUp" data-wow-delay="0.1s">
+									<div class="cta-text">
+									<h3><b>Acerca de...</b></h3>
+									<p><b>Somos un equipo multidiciplinario integrado por alumnos de la UPP e IPN.</b></p>
+									</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="wow lightSpeedIn" data-wow-delay="0.1s">
+										<div class="cta-btn">
+										<a href="#" class="btn btn-skin btn-lg">Contacto</a>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+	</section>	
+
+	
+
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+    <script src="./js/jquery.min.js"></script>	 
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+	<script src="./js/wow.min.js"></script>
+	<script src="./js/jquery.scrollTo.js"></script>
+	<script src="./js/nivo-lightbox.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+
+</body>
+
+
+</html>
